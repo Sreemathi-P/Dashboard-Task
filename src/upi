@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ReqComplaint
+xmlns:ns2="http://npci.org/upi/schema/"
+xmlns:ns3="http://npci.org/cm/schema/">
+<Head ver="2.0"
+    ts="2021-02-20T17:11:21+05:30" 
+    orgId="NPCI"
+    msgId="5t0yaaWjrmTZoXEfcOz"
+    prodType="UPI"/>
+<Txn id="PTM9a1ef7bfa7b64d84abc14d9a0d58e789"
+    note="complain"
+    refId="PTM9a1ef7bfa7b64d84abc14d9a0d58e784"
+    refUrl="http://www.paytm.com" 
+    ts="2021-02-20T17:11:15+05:30" 
+    type="COMPLAINT"
+    orgTxnId="PTM9a1ef7bfa7b64d84abc14d9a0d58e784"
+    custRef="105199973904" 
+    orgTxnDate="2021-02-20T17:06:46+05:30" 
+    orgRrn="105199973904"
+    initiationMode="U1" 
+    subType="BENEFICIARY" 
+    purpose="00" 
+    refCategory="00"/>
+<Complaint reqAdjFlag="PBRB" 
+    reqAdjCode="U010" 
+    reqAdjAmount="30.00" 
+    orgSettRespCode="RB" 
+    currCycle="N"/>
+</ns2:ReqComplaint>

@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#basic-navbar-nav {
+  justify-content: end;
+}
+
+/* .navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color:rgb(32, 32, 32);
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+.logo {
+  width: 150px;
+  height: 70px;
+}
+
+.img {
+  width: 140px;
+  height: 65px;
+}
+
+.App table {
+  width: 600px;
+  height: 200px;
+  border-collapse: collapse;
+  float: right;
+  text-align: center;
+  font-size: 13px;
+}
+
+.App th {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  border: 1px solid rgb(228, 228, 228);
+}
+
+.App td {
+  text-align: center;
+  border: 1px solid rgb(228, 228, 228);
+}
+
+
+.sideBar a:hover {
+  color: blue;
+}
+
+.sideBar {
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+.sideLabel {
+  font-size: 12px;
+  padding-top: 0;
+}
+
+.home-icon {
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.s-reject {
+  background-color: red;
+  border-radius: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: white;
+}
+
+.s-success {
+  background-color: rgba(12, 161, 79, 0.76);
+  border-radius: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: white;
+}
+
+.s-pending {
+  background-color: rgb(255, 166, 0);
+  border-radius: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: white;
+}
+
+.m1-auto {
+
+  height: 1.2em;
+  width: 1.2em;
+
+}
+
+.nav-icon :hover {
+  color: blue !important;
+}
