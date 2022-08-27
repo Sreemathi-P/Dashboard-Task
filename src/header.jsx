@@ -3,11 +3,8 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from './Backspace-Logo.jpg';
-import { NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink } from 'reactstrap';
 import { MdOutlineNotificationsActive, MdOutlineHelp } from 'react-icons/md';
 import { BiUserCircle } from 'react-icons/bi';
-import { Link } from "react-router-dom";
-
 
 
 function Header() {
