@@ -2,9 +2,7 @@ import React from 'react';
 import {
   CDBSidebar,
   CDBSidebarContent,
-  CDBSidebarHeader,
   CDBSidebarMenu,
-  CDBSidebarMenuItem,
 } from 'cdbreact';
 
 import Nav from 'react-bootstrap/Nav';
