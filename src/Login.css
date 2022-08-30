@@ -15,12 +15,12 @@
     box-sizing: border-box;
 
 }
-form .container{
+form .container-l{
     position: relative;
     margin: 20px 0;
 }
 
-.container input{
+.container-l input{
     width:100%;
     padding: 0 4px;
     height: 38px;
@@ -34,7 +34,7 @@ form .container{
     /* position: relative; */
 }
 
-button{
+.login-button{
     width:93%;
     margin-left: 12px;
     padding: 0 5px;

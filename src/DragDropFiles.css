@@ -1,0 +1,64 @@
+.upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 5rem;
+    margin-left: 25rem;
+  }
+  
+  .dropzone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 25rem;
+    width: 25rem;
+    border: 1px dashed rgb(117, 112, 112);
+    padding: 4rem;
+  }
+  
+  /* .active {
+    background-color: #5f5959;
+  } */
+  
+  .browse-button {
+    /* padding: 1rem;
+    margin: 1rem; */
+    font-size: large;
+    background-color: white;
+    border: white;
+    border-bottom: 3px solid blue;
+    color: blue;
+    cursor: pointer;
+    /* border: white; */
+    /* rgb(33, 33, 86) */
+  }
+  
+  .dis-button{
+    margin-top: 2rem;
+    width: 25rem;
+    height: 2rem;
+    background-color: rgb(187, 249, 200);
+    border: rgb(187, 249, 200);
+    color: white;
+  }
+  
+  .enable-button{
+    width: 12rem;
+    margin-top: 2rem;
+    height: 2rem;
+    background-color: rgb(96, 211, 121);
+    border: rgb(96, 211, 121);
+    color: white;
+    margin-left: 1rem;
+  }
+  
+  .enable-button-danger{
+    width: 12rem;
+    margin-top: 2rem;
+    height: 2rem;
+    background-color: rgb(255, 67, 67);
+    border: rgb(255, 67, 67);
+  }

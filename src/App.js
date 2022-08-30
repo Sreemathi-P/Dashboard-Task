@@ -5,15 +5,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import SideBarnew from './SideBarnew';
 import Login from './Login';
+import Home from './Home';
+import DragDropFiles from './DragDropFiles';
 function App() {
   return (
    <>
    <BrowserRouter>
-   <Header />
-   <SideBarnew/>
    <Routes>
-    <Route path='/' element={<Table />}/>
-    {/* <Route path='/login' element={<Login />}/> */}
+    <Route path='/' element={<Login />}/>
+    <Route path='/home' element={<Home />}/>
+    <Route path='/create' element={<DragDropFiles />}/>
    </Routes>
    </BrowserRouter>
    </>
