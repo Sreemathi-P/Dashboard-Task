@@ -10,7 +10,6 @@ function SideBarnew() {
           <Navbar.Toggle className='sidebar-toggle' aria-controls='basic-navbar-nav' />
           <Navbar.Collapse className='sidebar-collapse' id='basic-navbar-nav'>
           <Nav defaultActiveKey="/home" className="flex-column" >
-            <br></br>
             <Nav.Link href="/home" className='nav-icon'>
               <AiOutlineHome className='home-icon' />
               <h6 className='sideLabel'>Home</h6>

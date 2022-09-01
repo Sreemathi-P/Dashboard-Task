@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Login from './Login';
 import Home from './Home';
 import DragDropFiles from './DragDropFiles';
+import Sample from './Table';
 function App() {
   return (
    <>

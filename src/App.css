@@ -63,25 +63,15 @@
   margin-left: 10px ;
 }
 
-.App table {
+/* .App table {
   width: 600px;
   height: 200px;
   border-collapse: collapse;
   float: right;
   text-align: center;
   font-size: 13px;
-}
-
-.App th {
-  border-bottom: 1px solid rgb(228, 228, 228);
-  border: 1px solid rgb(228, 228, 228);
-}
-
-.App td {
-  text-align: center;
-  border: 1px solid rgb(228, 228, 228);
-}
-
+  margin-right: 5px;
+} */
 
 .sideBar a:hover {
   color: blue;
@@ -100,30 +90,6 @@
 .home-icon {
   height: 1.2em;
   width: 1.2em;
-}
-
-.s-reject {
-  background-color: red;
-  border-radius: 5px;
-  margin-left: 8px;
-  margin-right: 8px;
-  color: white;
-}
-
-.s-success {
-  background-color: rgba(12, 161, 79, 0.76);
-  border-radius: 5px;
-  margin-left: 8px;
-  margin-right: 8px;
-  color: white;
-}
-
-.s-pending {
-  background-color: rgb(255, 166, 0);
-  border-radius: 5px;
-  margin-left: 8px;
-  margin-right: 8px;
-  color: white;
 }
 
 .m1-auto {

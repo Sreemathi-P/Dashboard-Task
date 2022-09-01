@@ -1,0 +1,41 @@
+.table-responsive table{
+    font-size: 13px;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
+.table-responsive th {
+    text-align: center;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    border: 1px solid rgb(228, 228, 228);
+  }
+  
+  .table-responsive td {
+    text-align: center;
+    border: 1px solid rgb(228, 228, 228);
+  }
+  
+  .s-reject {
+    background-color: red;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+  }
+  
+  .s-success {
+    background-color: rgba(12, 161, 79, 0.76);
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+  }
+  
+  .s-pending {
+    background-color: rgb(255, 166, 0);
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+  }
+  
