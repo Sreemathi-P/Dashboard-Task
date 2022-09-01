@@ -10,8 +10,8 @@ function Table() {
     ]
 
     return (
-        <div class="table-responsive">
-            <table class="table">
+        <div className="table-responsive">
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">CaseID</th>
