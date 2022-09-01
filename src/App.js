@@ -1,9 +1,6 @@
 import './App.css';
-import Header from './header';
-import Table from './Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import SideBarnew from './SideBarnew';
 import Login from './Login';
 import Home from './Home';
 import DragDropFiles from './DragDropFiles';

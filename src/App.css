@@ -87,10 +87,10 @@
   color: blue;
 }
 
-.sideBar {
+/* .sideBar {
   font-size: 12px;
   padding-left: 30px;
-}
+} */
 
 .sideLabel {
   font-size: 12px;
@@ -130,7 +130,7 @@
 
   height: 1.2em;
   width: 1.2em;
-
+  padding: 10px;
 }
 
 .nav-icon :hover {
@@ -139,7 +139,17 @@
 
 .sidebar-new{
   margin-left: 0;
+  padding-left: 0px;
   width: 5rem;
+}
+
+.sidebar-toggle{
+  width: 80%;
+  margin-left: 2px;
+}
+
+.sidebar-collapse{
+  margin-left: 10px;
 }
 
 .nav-icon{

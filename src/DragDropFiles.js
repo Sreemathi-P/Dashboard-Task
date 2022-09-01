@@ -28,42 +28,44 @@ const DragDropFiles = () => {
         <>
             <Header />
             <div>
-                <SideBarnew/>
-                            <div
-                                className="dropzone"
-                                onDragOver={handleDragOver}
-                                onDrop={handleDrop}
-                            >
-                                <BsCloudUpload className="upload-icon" size={70} />
-                                <h3>Drag and drop files or
-                                    <input
-                                        type="file"
-                                        multiple
-                                        onChange={(event) => setFiles(event.target.files)}
-                                        hidden
-                                        accept=".csv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-                                        ref={inputRef}
-                                    />
-                                    <button className="browse-button" onClick={() => inputRef.current.click()}>Browse</button>
-                                </h3>
-                                <p>Supported formate: CSV, Excel</p>
-                            </div>
-                            {
-                                !files && <>
-                                    <div className="actions">
-                                        <button type="button" className="dis-button" onClick={handleUpload} disabled>UPLOAD FILE</button>
-                                    </div>
-                                </>
-                            }
-                            {
-                                files && <>
-                                    <div className="actions">
-                                        <button className="enable-button-danger" onClick={() => { setFiles(null); window.location.reload(true) }}>Cancel</button>
-                                        <button type="button" className="enable-button" onClick={handleUpload} >Upload</button>
-                                    </div>
-                                </>
-                            }
+                <SideBarnew />
+                <div className="upload">
+                <div
+                    className="dropzone"
+                    onDragOver={handleDragOver}
+                    onDrop={handleDrop}
+                >
+                    <BsCloudUpload className="upload-icon" size={70} />
+                    <h3>Drag and drop files or
+                        <input
+                            type="file"
+                            multiple
+                            onChange={(event) => setFiles(event.target.files)}
+                            hidden
+                            accept=".csv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                            ref={inputRef}
+                        />
+                        <button className="browse-button" onClick={() => inputRef.current.click()}>Browse</button>
+                    </h3>
+                    <p>Supported formate: CSV, Excel</p>
+                </div>
+                {
+                    !files && <>
+                        <div className="actions">
+                            <button type="button" className="dis-button" onClick={handleUpload} disabled>UPLOAD FILE</button>
                         </div>
+                    </>
+                }
+                {
+                    files && <>
+                        <div className="actions">
+                            <button className="enable-button-danger" onClick={() => { setFiles(null); window.location.reload(true) }}>Cancel</button>
+                            <button type="button" className="enable-button" onClick={handleUpload} >Upload</button>
+                        </div>
+                    </>
+                }
+            </div>
+                </div>
         </>
     );
 };

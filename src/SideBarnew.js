@@ -5,8 +5,11 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function SideBarnew() {
   return (
-        <div className='sidebar-new'>
-          <Nav defaultActiveKey="/home" className="flex-column">
+    <div className='sidebar-new'>
+      <Navbar bg="light" expand="lg">
+          <Navbar.Toggle className='sidebar-toggle' aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse className='sidebar-collapse' id='basic-navbar-nav'>
+          <Nav defaultActiveKey="/home" className="flex-column" >
             <br></br>
             <Nav.Link href="/home" className='nav-icon'>
               <AiOutlineHome className='home-icon' />
@@ -27,8 +30,10 @@ function SideBarnew() {
               <AiOutlinePlus className='home-icon' />
               <h6 className='sideLabel'>Create</h6>
             </Nav.Link>
-          </Nav>
-        </div>
+            </Nav>
+          </Navbar.Collapse>
+      </Navbar>
+    </div>
   );
 }
 
