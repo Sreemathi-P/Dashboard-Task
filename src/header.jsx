@@ -1,40 +1,46 @@
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
-import { AiOutlineHome, AiOutlinePlus } from 'react-icons/ai';
-import { MdWorkOutline, MdBarChart } from 'react-icons/md';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from './backspaceLogo.png';
+import { MdOutlineNotificationsActive, MdOutlineHelp } from 'react-icons/md';
+import { BiUserCircle } from 'react-icons/bi';
 
-function SideBarnew() {
+
+function Header() {
   return (
-    <div className='sidebar-new'>
+    <>
       <Navbar bg="light" expand="lg">
-          <Navbar.Toggle className='sidebar-toggle' aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse className='sidebar-collapse' id='basic-navbar-nav'>
-          <Nav defaultActiveKey="/home" className="flex-column" >
-            <br></br>
-            <Nav.Link href="/home" className='nav-icon'>
-              <AiOutlineHome className='home-icon' />
-              <h6 className='sideLabel'>Home</h6>
-            </Nav.Link>
-
-            <Nav.Link href="/work" className='nav-icon'>
-              <MdWorkOutline className='home-icon' />
-              <h6 className='sideLabel'>Work</h6>
-            </Nav.Link>
-
-            <Nav.Link href="/reports" className='nav-icon'>
-              <MdBarChart className='home-icon' />
-              <h6 className='sideLabel'>Reports</h6>
-            </Nav.Link>
-
-            <Nav.Link href="/create" className='nav-icon'>
-              <AiOutlinePlus className='home-icon' />
-              <h6 className='sideLabel'>Create</h6>
-            </Nav.Link>
+        <Container fluid>
+          <div className='logo'>
+            <img src={logo} className='img' alt="Brand Logo" />
+          </div>
+          {/* <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'> */}
+            {/* <Form className="d-flex">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+              />
+            </Form> */}
+            <Nav className="ml-auto" style={{display:"flex", flexDirection:"row"}}>
+              <Nav.Link href="/notification" className='nav-icon' style={{padding:"10px"}}>
+                <MdOutlineNotificationsActive className='home-icon' />
+              </Nav.Link>
+              <Nav.Link href="/help" className='nav-icon' style={{padding:"10px"}}>
+                <MdOutlineHelp className='home-icon' />
+              </Nav.Link>
+              <Nav.Link href="/profile" className='nav-icon' style={{padding:"10px"}}>
+                <BiUserCircle className='home-icon' />
+              </Nav.Link>
             </Nav>
-          </Navbar.Collapse>
+          {/* </Navbar.Collapse> */}
+        </Container>
       </Navbar>
-    </div>
+    </>
   );
 }
 
-export default SideBarnew;
+export default Header;
